@@ -60,7 +60,7 @@ export const mainProjects = [
   },
   {
     title: "實家 Jikka 實坪制不動產平台",
-    url: "https://real-estate-ai-adviser.kaku88life.com/",
+    url: "https://jikka.app/",
     tech: ["Next.js 14", "Prisma", "PostgreSQL", "OpenAI API", "NewebPay", "Docker"],
     motivation:
       "5 年不動產業務經驗讓我看到一個問題：內政部實價登錄的「單價」是用總價除以建物移轉總面積（含公設、車位面積），消費者無法準確判斷真實房價。本平台採用「實坪單價」——（總價 - 車位價）÷ 主建物面積，還原每坪真實使用空間的價值。這跟野球革命在做的事本質上相似：挖掘更深層的數據，讓使用者看到更貼近真實的面貌。",
