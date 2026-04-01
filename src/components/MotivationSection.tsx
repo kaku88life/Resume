@@ -1,5 +1,7 @@
 import { motivation, articles } from "../data/resume-data";
 
+const baseUrl = import.meta.env.BASE_URL;
+
 function ArticleCard({ article }: { article: typeof articles[0] }) {
   return (
     <a
@@ -40,7 +42,19 @@ export function MotivationSection() {
           不只是找一份工作，而是想加入一個我真心在乎的團隊。
         </p>
 
-        <ul className="mt-8 space-y-4">
+        <div className="mt-8 flex flex-col md:flex-row gap-8 items-start">
+          {/* Baseball photo */}
+          <div className="shrink-0 md:sticky md:top-24">
+            <img
+              src={`${baseUrl}baseball.jpg`}
+              alt="Watching baseball at PayPay Dome"
+              className="w-full md:w-56 rounded-xl object-cover shadow-md"
+            />
+            <p className="text-xs text-gray-400 mt-2 text-center">PayPay Dome, Fukuoka 2026</p>
+          </div>
+
+          <div className="flex-1">
+        <ul className="space-y-4">
           {motivation.map((m, i) => (
             <li key={i} className="flex items-start gap-4">
               <span className="mt-0.5 w-7 h-7 rounded-full bg-primary/10 text-primary text-sm font-bold flex items-center justify-center shrink-0">
@@ -50,6 +64,8 @@ export function MotivationSection() {
             </li>
           ))}
         </ul>
+          </div>
+        </div>
 
         {/* FB Articles */}
         <div className="mt-12">
