@@ -10,7 +10,9 @@ export function Footer() {
         {/* CTA */}
         <div className="mt-8">
           <a
-            href={`mailto:${hero.contact.email}`}
+            href={`https://mail.google.com/mail/?view=cm&to=${hero.contact.email}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 bg-accent hover:bg-accent-light text-primary-dark font-bold rounded-lg transition-colors text-base"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
@@ -20,7 +22,9 @@ export function Footer() {
 
         <div className="flex justify-center gap-6 mt-8">
           <a
-            href={`mailto:${hero.contact.email}`}
+            href={`https://mail.google.com/mail/?view=cm&to=${hero.contact.email}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-white/70 hover:text-white transition-colors text-sm"
           >
             {hero.contact.email}
