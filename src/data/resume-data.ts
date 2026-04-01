@@ -45,7 +45,7 @@ export const articles = [
 export const mainProjects = [
   {
     title: "5-Man Fantasy League",
-    url: "https://5man-keeperleague.zeabur.app/2026",
+    url: "https://5man-keeperleague.zeabur.app/",
     tech: ["FastAPI", "Next.js 15", "PostgreSQL", "Docker", "Zeabur"],
     motivation:
       "我是這個 16 隊 Keeper League 的 Commissioner（聯盟長）。每年休賽季都要花大量時間手動處理合約計算、薪資驗算等繁瑣作業。我決定把整個流程自動化，讓我能把時間花在真正有趣的部分：分析球員數據和制定戰略。",
