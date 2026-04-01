@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -20,4 +21,21 @@ body {
   color: #1a1a1a;
   background: white;
   margin: 0;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-margin-top: 4rem;
+}
+
+/* Fade-in animation on scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

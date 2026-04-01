@@ -18,10 +18,10 @@ export const hero = {
 
 export const motivation = [
   "曾是野球革命的付費用戶——15 年球迷、10 年 Fantasy 玩家、打過棒球。身為一般球迷，我理解訂閱的門檻在哪裡，也對如何擴大用戶群有具體的想法。",
-  "日文 N1 + 棒球知識的交集——能直接理解日本棒球媒體原文、NPB 數據來源。",
+  "日文 N1 + 棒球知識——能直接閱讀日本棒球媒體原文與 NPB 數據來源。",
   "AI 開發效率——3 個月內從零完成 3 個生產級應用，證明快速交付能力。",
   "數據敏感度經商業驗證——在信義房屋自行建立客戶數據分析體系，用數據驅動決策。",
-  "全遠端工作力已驗證——日本數位游牧一個月期間完成 539 個 commits，同時旅行、記錄行程、寫部落格。",
+  "自律與持續投入——日本數位游牧一個月，539 個 commits。方法到處都有，但想做到什麼才是關鍵；只要決定要做，就會找到方法做到。",
   "誠實的期待——希望透過這份工作磨練後端技術，同時用棒球知識和產品直覺為野球革命創造價值。如果有其他更合適的角色，也很樂意討論。",
 ];
 
@@ -43,7 +43,7 @@ export const articles = [
 
 export const mainProjects = [
   {
-    title: "棒球 Fantasy League 數據追蹤平台",
+    title: "5-Man Fantasy League",
     url: "https://5man-keeperleague.zeabur.app/2026",
     tech: ["FastAPI", "Next.js 15", "PostgreSQL", "Docker", "Zeabur"],
     motivation:
@@ -55,10 +55,10 @@ export const mainProjects = [
       "申請 Yahoo Fantasy API、LINE Messaging API、MLB Stats API 帳號",
       "每日實際使用，持續回報問題並驅動改進",
     ],
-    result: "16 位聯盟成員實際使用中。今年 Keeper 選擇作業時間從往年數天縮短到幾小時。",
+    result: "16 位聯盟成員實際使用中。今年 Keeper 選擇作業時間從往年數天縮短到 1 小時。",
   },
   {
-    title: "不動產實價查詢與 AI 顧問平台",
+    title: "實家 Jikka 實坪制不動產平台",
     url: "https://real-estate-ai-adviser.kaku88life.com/",
     tech: ["Next.js 14", "Prisma", "PostgreSQL", "OpenAI API", "NewebPay", "Docker"],
     motivation:

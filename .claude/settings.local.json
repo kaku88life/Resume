@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -sv http://localhost:55063/)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :5179)",
+      "Bash(taskkill //PID 30224 //F)"
+    ]
+  }
+}

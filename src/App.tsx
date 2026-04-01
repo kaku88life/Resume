@@ -1,20 +1,21 @@
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
 import { MotivationSection } from "./components/MotivationSection";
-import { ProjectsSection } from "./components/ProjectsSection";
-import { SkillsSection } from "./components/SkillsSection";
 import { ExperienceSection } from "./components/ExperienceSection";
+import { SkillsSection } from "./components/SkillsSection";
+import { ProjectsSection } from "./components/ProjectsSection";
 import { Footer } from "./components/Footer";
+import { FadeIn } from "./components/FadeIn";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
       <HeroSection />
-      <MotivationSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <ExperienceSection />
+      <FadeIn><MotivationSection /></FadeIn>
+      <FadeIn><ExperienceSection /></FadeIn>
+      <FadeIn><SkillsSection /></FadeIn>
+      <FadeIn><ProjectsSection /></FadeIn>
       <Footer />
     </div>
   );

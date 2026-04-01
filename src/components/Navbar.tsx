@@ -2,9 +2,9 @@ import { useState } from "react";
 
 const links = [
   { href: "#about", label: "關於我" },
-  { href: "#projects", label: "作品" },
-  { href: "#skills", label: "能力" },
   { href: "#experience", label: "經歷" },
+  { href: "#skills", label: "能力" },
+  { href: "#projects", label: "作品" },
 ];
 
 export function Navbar() {
