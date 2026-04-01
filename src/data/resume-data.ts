@@ -2,7 +2,7 @@ export const hero = {
   name: "郭子睿",
   position: "應徵野球革命 後端工程師",
   summary:
-    "非本科出身，帶著 6 年不動產業務實戰與 15 年棒球迷的經驗，2026 年 1 月開始透過 Claude Code 進行 Vibe Coding。3 個月內從零交付 3 個 Web 應用——我擅長的不是寫程式，而是把複雜的真實需求轉化為可運作的產品。",
+    "腦中永遠有下一個想做的東西——非本科出身，2026 年 1 月開始透過 Claude Code 自學開發，3 個月內嘗試了超過 8 個專案，從麻將遊戲到 SaaS CRM，每個都從真實生活需求出發。我擅長的不是寫程式，而是從使用者的角度定義問題，快速把想法驗證成可運作的產品。",
   contact: {
     email: "kaku88life@gmail.com",
     website: "https://kaku88life.com",
