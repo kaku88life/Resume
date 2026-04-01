@@ -3,9 +3,10 @@
   "configurations": [
     {
       "name": "resume-dev",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--", "--port", "3456"],
-      "port": 3456
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["vite", "--port", "5179", "--host"],
+      "port": 5179,
+      "autoPort": false
     }
   ]
 }

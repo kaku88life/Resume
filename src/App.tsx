@@ -1,8 +1,9 @@
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
+import { MotivationSection } from "./components/MotivationSection";
 import { ProjectsSection } from "./components/ProjectsSection";
 import { SkillsSection } from "./components/SkillsSection";
-import { OtherWorksSection } from "./components/OtherWorksSection";
+import { ExperienceSection } from "./components/ExperienceSection";
 import { Footer } from "./components/Footer";
 
 export default function App() {
@@ -10,9 +11,10 @@ export default function App() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <HeroSection />
+      <MotivationSection />
       <ProjectsSection />
       <SkillsSection />
-      <OtherWorksSection />
+      <ExperienceSection />
       <Footer />
     </div>
   );

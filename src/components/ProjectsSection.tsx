@@ -1,4 +1,4 @@
-import { mainProjects, articles } from "../data/resume-data";
+import { mainProjects, otherProjects, education } from "../data/resume-data";
 
 function ProjectCard({ project }: { project: typeof mainProjects[0] }) {
   return (
@@ -27,7 +27,6 @@ function ProjectCard({ project }: { project: typeof mainProjects[0] }) {
           ))}
         </div>
 
-        {/* Motivation box */}
         <div className="mt-5 p-4 bg-surface rounded-lg border-l-4 border-accent">
           <p className="text-xs font-bold text-accent uppercase tracking-wider mb-1">
             Why I Built This
@@ -35,7 +34,6 @@ function ProjectCard({ project }: { project: typeof mainProjects[0] }) {
           <p className="text-sm text-gray-700 leading-relaxed">{project.motivation}</p>
         </div>
 
-        {/* My work */}
         <div className="mt-5">
           <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">
             My Contribution
@@ -50,7 +48,6 @@ function ProjectCard({ project }: { project: typeof mainProjects[0] }) {
           </ul>
         </div>
 
-        {/* Result */}
         <div className="mt-5 p-3 bg-primary/5 rounded-lg">
           <p className="text-sm text-primary font-medium">
             <span className="font-bold">Result: </span>
@@ -59,35 +56,6 @@ function ProjectCard({ project }: { project: typeof mainProjects[0] }) {
         </div>
       </div>
     </div>
-  );
-}
-
-function ArticleCard({ article }: { article: typeof articles[0] }) {
-  return (
-    <a
-      href={article.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block p-5 bg-white rounded-lg border border-gray-200 hover:shadow-md hover:border-primary/30 transition-all"
-    >
-      <div className="flex items-center gap-2 text-xs text-gray-500">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-        <span>Facebook</span>
-        <span>|</span>
-        <span>{article.date}</span>
-        {article.engagement && (
-          <>
-            <span>|</span>
-            <span>{article.engagement}</span>
-          </>
-        )}
-      </div>
-      <h4 className="font-bold text-gray-900 mt-2">{article.title}</h4>
-      <p className="text-sm text-gray-600 mt-1 leading-relaxed">{article.summary}</p>
-      <p className="text-xs text-primary font-medium mt-2">
-        Data source: Rebas
-      </p>
-    </a>
   );
 }
 
@@ -108,14 +76,55 @@ export function ProjectsSection() {
           ))}
         </div>
 
-        {/* Articles */}
+        {/* Other Projects */}
         <div className="mt-12">
-          <h3 className="text-xl font-bold text-primary mb-4">
-            棒球分析文章（引用野球革命 Rebas 數據）
-          </h3>
-          <div className="grid md:grid-cols-2 gap-4">
-            {articles.map((a) => (
-              <ArticleCard key={a.title} article={a} />
+          <h3 className="text-xl font-bold text-primary mb-2">Other Projects</h3>
+          <p className="text-gray-500 text-sm mb-6">
+            每個小專案都有它的角色——技術嘗試、生活工具、或是通往大專案的墊腳石。
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {otherProjects.map((p) => (
+              <div
+                key={p.title}
+                className="bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md transition-shadow"
+              >
+                <div className="flex items-start justify-between">
+                  <h4 className="font-bold text-gray-900 text-sm">{p.title}</h4>
+                  {p.url && (
+                    <a
+                      href={p.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary-light"
+                    >
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                  )}
+                </div>
+                <div className="flex flex-wrap gap-1.5 mt-2">
+                  {p.tech.map((t) => (
+                    <span key={t} className="px-1.5 py-0.5 text-[10px] font-medium bg-surface-alt text-primary/80 rounded">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-xs text-gray-500 mt-3 leading-relaxed">
+                  {p.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Education */}
+        <div className="mt-12">
+          <h3 className="text-xl font-bold text-primary mb-4">Education</h3>
+          <div className="flex flex-wrap gap-4">
+            {education.map((e) => (
+              <div key={e.school} className="bg-white rounded-lg border border-gray-200 px-5 py-4">
+                <p className="font-bold text-gray-900 text-sm">{e.school}</p>
+                {e.major && <p className="text-xs text-gray-500 mt-0.5">{e.major}</p>}
+              </div>
             ))}
           </div>
         </div>
