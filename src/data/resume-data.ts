@@ -2,10 +2,11 @@ export const hero = {
   name: "郭子睿",
   position: "應徵野球革命 後端工程師",
   summary:
-    "腦中永遠有下一個想做的東西——非本科出身，2026 年 1 月開始透過 Claude Code 自學開發，3 個月內嘗試了超過 8 個專案，從麻將遊戲到 SaaS CRM，每個都從真實生活需求出發。我擅長的不是寫程式，而是從使用者的角度定義問題，快速把想法驗證成可運作的產品。",
+    "腦中永遠有下一個想做的東西——非本科出身，2026 年 1 月開始透過 Claude Code 自學開發，3 個月內嘗試了超過 8 個專案，從麻將遊戲到 SaaS CRM、實坪制實價登錄網站、Fantasy Baseball 網站、個人學習、資源管理、工作流優化等等，都從真實生活需求出發。我不擅長寫程式，但換位思考、從使用者的角度定義問題，透過工具快速驗證想法、不斷嘗試，是我正在努力的方向。",
   contact: {
     email: "kaku88life@gmail.com",
     website: "https://kaku88life.com",
+    line: "kaku850205",
   },
   baseballIdentity: [
     "15 年棒球觀賽經驗",
@@ -55,7 +56,7 @@ export const mainProjects = [
       "申請 Yahoo Fantasy API、LINE Messaging API、MLB Stats API 帳號",
       "每日實際使用，持續回報問題並驅動改進",
     ],
-    result: "16 位聯盟成員實際使用中。今年 Keeper 選擇作業時間從往年數天縮短到 1 小時。",
+    result: "16 位聯盟成員實際使用中。今年 Keeper 選秀前準備作業時間從往年數天縮短到 1 小時。",
   },
   {
     title: "實家 Jikka 實坪制不動產平台",
