@@ -105,10 +105,14 @@ export function SkillsSection() {
           <p className="text-white/70 text-sm mb-6">
             邊旅行邊開發——證明全遠端工作的自律與產出能力
           </p>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-4 gap-4">
             <div className="text-center">
-              <p className="text-3xl md:text-4xl font-bold">{nomadStats.commits}</p>
-              <p className="text-xs text-white/60 mt-1">Commits</p>
+              <p className="text-3xl md:text-4xl font-bold">{nomadStats.avgCommitsPerDay}</p>
+              <p className="text-xs text-white/60 mt-1">Commits / Day</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl md:text-4xl font-bold">{nomadStats.totalCommits}</p>
+              <p className="text-xs text-white/60 mt-1">Total Commits</p>
             </div>
             <div className="text-center">
               <p className="text-3xl md:text-4xl font-bold">{nomadStats.projects}</p>
