@@ -131,7 +131,7 @@ export const timeline = [
   {
     period: "2022/11 - 2025/08",
     title: "信義房屋 日本事業 台灣分處",
-    role: "跨國不動產業務",
+    role: "專案經理",
     description:
       "管理 4,132 筆客戶，促成 92 件日本不動產成交。",
     details: [
