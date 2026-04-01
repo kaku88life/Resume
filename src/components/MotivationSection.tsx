@@ -33,7 +33,7 @@ function ArticleCard({ article }: { article: typeof articles[0] }) {
 
 export function MotivationSection() {
   return (
-    <section className="py-16 md:py-20">
+    <section id="motivation" className="py-16 md:py-20">
       <div className="mx-auto max-w-5xl px-6">
         <h2 className="text-2xl md:text-3xl font-bold text-primary">
           為什麼是野球革命
