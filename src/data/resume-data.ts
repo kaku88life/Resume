@@ -1,5 +1,5 @@
 export const hero = {
-  name: "郭子睿",
+  name: "郭子睿Kaku",
   position: "應徵野球革命 後端工程師",
   summary:
     "腦中永遠有下一個想做的東西——非本科出身，2026 年 1 月開始透過 Claude Code 自學開發，3 個月內嘗試了超過 8 個專案，從麻將遊戲到 SaaS CRM、實坪制實價登錄網站、Fantasy Baseball 網站、個人學習、資源管理、工作流優化等等，都從真實生活需求出發。我不擅長寫程式，但換位思考、從使用者的角度定義問題，透過工具快速驗證想法、不斷嘗試，是我正在努力的方向。",
@@ -13,7 +13,6 @@ export const hero = {
     "10 年 Fantasy Baseball（Keeper/Dynasty League）",
     "高中校隊 + 大學乙組",
     "富邦悍將 & 德州遊騎兵球迷",
-    "熟悉進階數據：WAR、FIP、Barrel%、wRC+、K%、Zone%、RF/DRS...",
   ],
 };
 

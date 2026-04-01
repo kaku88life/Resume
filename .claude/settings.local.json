@@ -5,7 +5,10 @@
       "Bash(curl -sv http://localhost:55063/)",
       "Bash(netstat -ano)",
       "Bash(findstr :5179)",
-      "Bash(taskkill //PID 30224 //F)"
+      "Bash(taskkill //PID 30224 //F)",
+      "Bash(ls -la \"/c/vibe coding/Resume/\"*.pdf)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm install:*)"
     ]
   }
 }
