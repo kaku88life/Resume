@@ -39,7 +39,7 @@ export function MotivationSection() {
           為什麼是野球革命
         </h2>
         <p className="text-gray-500 mt-2">
-          不只是找一份工作，而是想加入一個我真心在乎的團隊。
+          Work for life, work with passion——當工作來自真心在乎的事，投入程度不需要任何人督促。
         </p>
 
         <div className="mt-8 flex flex-col md:flex-row gap-8 items-start">
