@@ -1,4 +1,4 @@
-# Resume - Kuo Tzu-Jui
+# Resume - Kuo Tzu Ruei
 
 Interactive resume website built for applying to Rebas (野球革命) Backend Engineer position.
 
