@@ -8,7 +8,10 @@
       "Bash(taskkill //PID 30224 //F)",
       "Bash(ls -la \"/c/vibe coding/Resume/\"*.pdf)",
       "Bash(npm uninstall:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Read(//mnt/c/vibe coding/**)",
+      "Bash(npm run:*)",
+      "Bash(ls \"/c/vibe coding/Resume/\"*.pdf)"
     ]
   }
 }

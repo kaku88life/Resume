@@ -1,6 +1,6 @@
-# Resume - Kuo Tzu Ruei
+# Resume - Kuo Tzu Ruei (Kaku)
 
-Interactive resume website built for applying to Rebas (野球革命) Backend Engineer position.
+Interactive resume website — AI Application x Business Strategy x Cross-border Operations.
 
 ## Live
 
