@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const sections = [
   { id: "about", label: "關於我" },
-  { id: "motivation", label: "動機" },
+  { id: "strengths", label: "優勢" },
   { id: "experience", label: "經歷" },
   { id: "skills", label: "能力" },
   { id: "projects", label: "作品" },

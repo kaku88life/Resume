@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const links = [
   { href: "#about", label: "關於我" },
+  { href: "#strengths", label: "優勢" },
   { href: "#experience", label: "經歷" },
   { href: "#skills", label: "能力" },
   { href: "#projects", label: "作品" },

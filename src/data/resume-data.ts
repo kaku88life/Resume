@@ -1,82 +1,116 @@
 export const hero = {
-  name: "郭子睿Kaku",
-  position: "應徵野球革命 後端工程師",
+  name: "郭子睿",
+  nameEn: "Kaku",
+  position: "AI Application x Business Strategy x Cross-border Operations",
   summary:
-    "腦中永遠有下一個想做的東西——非本科出身，2026 年 1 月開始透過 Claude Code 自學開發，3 個月內嘗試了超過 8 個專案，從麻將遊戲到 SaaS CRM、實坪制實價登錄網站、Fantasy Baseball 網站、個人學習、資源管理、工作流優化等等，都從真實生活需求出發。我不擅長寫程式，但換位思考、從使用者的角度定義問題，透過工具快速驗證想法、不斷嘗試，是我正在努力的方向。",
+    "懂傳產痛點、親手用 AI 解過問題、能用業務語言向客戶解釋 AI 價值。5 年不動產與跨國營運經歷，結合 2026 年起利用 AI 工具獨立開發多個 MVP 的實戰經驗。擅長從真實需求出發定義問題、以 AI 加速驗證商業假設。不是「寫 Code 的人」，而是「決定做什麼、為什麼做、怎麼用 AI 做到」的人——能在技術、業務與用戶之間扮演橋樑角色。",
   contact: {
     email: "kaku88life@gmail.com",
     website: "https://kaku88life.com",
     line: "kaku850205",
   },
-  baseballIdentity: [
-    "15 年棒球觀賽經驗",
-    "10 年 Fantasy Baseball（Keeper/Dynasty League）",
-    "高中校隊 + 大學乙組",
-    "富邦悍將 & 德州遊騎兵球迷",
+  identityTags: [
+    "AI 應用落地實戰",
+    "5 年跨國不動產營運",
+    "日文 JLPT N1",
+    "0-to-1 產品開創者",
+    "Vibe Coding 開發者",
   ],
 };
 
-export const motivation = [
-  "曾是野球革命的付費用戶——15 年球迷、10 年 Fantasy 玩家、打過棒球。身為一般球迷，我理解訂閱的門檻在哪裡，也對如何擴大用戶群有具體的想法。",
-  "日文 N1 + 棒球知識——能直接閱讀日本棒球媒體原文與 NPB 數據來源。",
-  "AI 開發效率——3 個月內從零完成 3 個生產級應用，證明快速交付能力。",
-  "數據敏感度經商業驗證——在信義房屋自行建立客戶數據分析體系，用數據驅動決策。",
-  "自律與持續投入——日本數位游牧一個月，平均每日 18 commits。方法到處都有，但想做到什麼才是關鍵；只要決定要做，就會找到方法做到。",
-  "誠實的期待——希望透過這份工作磨練後端技術，同時用棒球知識和產品直覺為野球革命創造價值。如果有其他更合適的角色，也很樂意討論。",
-];
-
-export const articles = [
+export const coreStrengths = [
   {
-    title: "富邦悍將 25 人保護名單推測",
-    url: "https://www.facebook.com/share/p/1P5o6tyCg5/",
-    date: "2025/12/12",
-    summary: "從攻守數據分析各位置保留策略、預測 FA 補償方向。附自製數據表，引用野球革命 Rebas 資料。",
-    engagement: "50 讚、6 留言、2 分享",
+    title: "傳產痛點 x AI 解方",
+    description:
+      "5 年不動產業務讓我看到產業的資訊不透明問題，親手用 OpenAI API 打造 AI 智能填表功能解決它。能從業務現場出發，定義 AI 可以解決的真實問題。",
+    icon: "bridge",
   },
   {
-    title: "江少慶 FA 補償數據分析",
-    url: "https://www.facebook.com/share/p/14brDiFJY6n/",
-    date: "2025/12/19",
-    summary: "用 FIP、BABIP、K%、BB% 逐年分析江少慶生涯數據，解釋為何未在保護名單中。文末附 FIP/BABIP 科普解說。",
+    title: "跨國業務溝通",
+    description:
+      "日文 N1，曾任信義房屋日本事業專案經理，管理 4,132 筆客戶、促成 92 件跨境成交。能直接對接日本市場與日文技術文件。",
+    icon: "globe",
+  },
+  {
+    title: "AI 工具實戰應用",
+    description:
+      "不只是用 AI 寫 Code——將 OpenAI API、Gemini、LINE Bot、Apify 等工具整合進產品，設計 AI 功能的使用者流程與商業模型。",
+    icon: "ai",
+  },
+  {
+    title: "數據驅動決策",
+    description:
+      "在信義房屋自行建立客戶數據分析體系，追蹤客戶生命週期、轉換率與成交分析，用數據而非直覺做業務決策。",
+    icon: "chart",
+  },
+  {
+    title: "快速 MVP 驗證",
+    description:
+      "3 個月內從零交付 3 個生產級 Web 應用。透過 Vibe Coding 方法論，將想法快速轉化為可運作的產品原型。",
+    icon: "rocket",
+  },
+  {
+    title: "產品思維優先",
+    description:
+      "每個專案都從「使用者需要什麼」出發，不是從「技術能做什麼」出發。誠實區分自己做的與 AI 協助的，聚焦在產品定義與商業邏輯。",
+    icon: "lightbulb",
+  },
+];
+
+export const aiExperience = [
+  {
+    name: "Claude Code",
+    category: "AI 開發",
+    description: "主要開發夥伴，透過 Vibe Coding 工作流完成所有專案的架構設計與程式實作",
+  },
+  {
+    name: "OpenAI API (GPT-4)",
+    category: "AI 產品整合",
+    description: "Jikka 平台的 AI 智能填表功能——URL 解析、截圖 OCR、自然語言輸入三種模式",
+  },
+  {
+    name: "Google Gemini",
+    category: "AI 產品整合",
+    description: "LINE Bot 多語言翻譯與文字處理引擎、職涯策略分析與市場研究、商業企劃發想與結構化輸出",
+  },
+  {
+    name: "Apify",
+    category: "資料自動化",
+    description: "不動產資料爬蟲與自動化擷取，串接至 Jikka 平台資料庫",
+  },
+  {
+    name: "Playwright",
+    category: "瀏覽器自動化",
+    description: "求職平台資料擷取、自動化測試與網頁結構分析",
+  },
+  {
+    name: "Notion API",
+    category: "知識管理",
+    description: "LINE Bot 串接 Notion，語音/文字自動歸檔為結構化筆記",
   },
 ];
 
 export const mainProjects = [
   {
-    title: "5-Man Fantasy League",
-    url: "https://5man-keeperleague.zeabur.app/",
-    tech: ["FastAPI", "Next.js 15", "PostgreSQL", "Docker", "Zeabur"],
-    motivation:
-      "我是這個 16 隊 Keeper League 的 Commissioner（聯盟長）。每年休賽季都要花大量時間手動處理合約計算、薪資驗算等繁瑣作業。我決定把整個流程自動化，讓我能把時間花在真正有趣的部分：分析球員數據和制定戰略。",
-    myWork: [
-      "以 Commissioner 身份定義聯盟所有規則（1+1+X 合約制度、薪資上限、FAAB 買斷計算）",
-      "規劃功能優先順序：Keeper 選擇核心流程 → 陣容同步 → LINE 通知 → 數據分析",
-      "提供 2014-2026 共 12 年歷史資料做合約重建",
-      "申請 Yahoo Fantasy API、LINE Messaging API、MLB Stats API 帳號",
-      "每日實際使用，持續回報問題並驅動改進",
-    ],
-    result: "16 位聯盟成員實際使用中。今年 Keeper 選秀前準備作業時間從往年數天縮短到 1 小時。",
-  },
-  {
-    title: "實家 Jikka 實坪制不動產平台",
+    title: "實家 Jikka — 實坪制不動產 AI 平台",
     url: "https://jikka.app/",
     tech: ["Next.js 14", "Prisma", "PostgreSQL", "OpenAI API", "NewebPay", "Docker"],
     motivation:
-      "5 年不動產業務經驗讓我看到一個問題：內政部實價登錄的「單價」是用總價除以建物移轉總面積（含公設、車位面積），消費者無法準確判斷真實房價。本平台採用「實坪單價」——（總價 - 車位價）÷ 主建物面積，還原每坪真實使用空間的價值。這跟野球革命在做的事本質上相似：挖掘更深層的數據，讓使用者看到更貼近真實的面貌。",
+      "5 年不動產業務經驗讓我看到一個問題：內政部實價登錄的「單價」包含公設面積，消費者無法判斷真實房價。本平台採用「實坪單價」還原每坪真實使用空間的價值，並導入 AI 智能填表降低使用門檻。",
     myWork: [
       "基於 5 年業務經驗定義「實坪制」計算邏輯（扣除車位、推估得房率）",
-      "設計停車位價格推估演算法（用統計均值反推）",
-      "規劃 AI 智能填表功能（URL/截圖/文字三種輸入模式）",
-      "設計點數經濟與訂閱制商業模型",
-      "申請 NewebPay 金流、OpenAI API、Apify 等服務帳號",
+      "設計 AI 智能填表功能規格（URL 解析 / 截圖 OCR / 自然語言三種輸入模式）",
+      "設計停車位價格推估演算法（統計均值反推）",
+      "規劃點數經濟與訂閱制商業模型（輕用戶 / 重用戶 / 企業版）",
+      "申請並整合 NewebPay 金流、OpenAI API、Apify 等第三方服務",
     ],
-    result: "含 23 個資料模型、金流訂閱、AI 分析、互動式地圖（15 萬+ POI）的完整 SaaS 產品。",
+    result: "含 23 個資料模型、金流訂閱、AI 分析、互動式地圖（15 萬+ POI）的完整 SaaS 產品 MVP。",
   },
   {
     title: "多租戶 CRM 系統",
     tech: ["Next.js 14", "FastAPI", "SQLAlchemy", "PostgreSQL"],
     motivation:
-      "太太從事美甲工作，需要一套系統來吸引客戶預約、管理預約狀況、追蹤維護客戶關係。先用 Google Apps Script + Sheets 做了第一版，後來進化成通用型 SaaS CRM。這套會員系統後來也直接套用到我的不動產平台上。",
+      "從美甲預約管理的真實需求出發，先用 Google Apps Script + Sheets 做第一版驗證，再進化為通用型 SaaS CRM 平台。這套會員系統後來也直接套用到 Jikka 不動產平台上。",
     myWork: [
       "決定 SaaS 多租戶架構方向",
       "定義 10+ 產業模板（美甲、健身、醫療、餐飲等）",
@@ -84,24 +118,38 @@ export const mainProjects = [
     ],
     result: "25 張資料表、158+ API 端點、完整預約/會員/分析功能。",
   },
+  {
+    title: "5-Man Fantasy League — 聯盟管理自動化",
+    url: "https://5man-keeperleague.zeabur.app/",
+    tech: ["FastAPI", "Next.js 15", "PostgreSQL", "LINE API", "Docker"],
+    motivation:
+      "身為 16 隊 Fantasy Baseball 聯盟長，每年需花數天手動處理合約計算與薪資驗算。決定將複雜的聯盟規則邏輯化、流程自動化，並串接 LINE 做即時通知。",
+    myWork: [
+      "定義所有聯盟規則並轉化為可實作的商業邏輯規格",
+      "規劃功能優先順序：核心流程 → 資料同步 → LINE 通知 → 數據分析",
+      "提供 12 年歷史資料用於系統驗證與合約重建",
+      "申請並整合 Yahoo Fantasy API、LINE Messaging API、MLB Stats API",
+    ],
+    result: "16 位成員實際使用中。每年準備作業時間從數天縮短至 1 小時。",
+  },
 ];
 
 export const otherProjects = [
   {
     title: "LINE 靈感助手 Bot",
     tech: ["Python", "Flask", "OpenAI", "Gemini", "Notion API"],
-    description: "旅遊時用於快速翻譯、語音轉文字、筆記存 Notion。後來將 LINE Bot 技術轉用到棒球平台，做為聯盟公告/提醒系統。",
+    description: "整合 GPT + Gemini 雙 AI 引擎的 LINE Bot。語音轉文字、多語言翻譯、快速存 Notion。展示 AI API 串接與 Chatbot 開發能力。",
   },
   {
     title: "個人部落格",
     tech: ["Astro 5", "React 19", "Tailwind", "Pagefind", "Leaflet"],
-    description: "旅遊記錄、花費追蹤、作品集展示平台。3 月日本數位游牧期間持續更新。",
+    description: "旅遊記錄、花費追蹤、作品集展示平台。日本數位游牧期間持續更新。",
     url: "https://kaku88life.com",
   },
   {
-    title: "GAS 美甲預約系統",
-    tech: ["Google Apps Script", "Google Sheets"],
-    description: "CRM 系統的前身，用 Google Sheets 做的第一版預約管理，包含會員、預約、優惠券功能。",
+    title: "求職情報系統",
+    tech: ["Node.js", "Playwright", "AI Agent"],
+    description: "自動化爬蟲 + AI 評分的求職工具。多平台職缺掃描、自動評估匹配度、產出結構化報告。",
   },
   {
     title: "貸款試算器",
@@ -111,7 +159,7 @@ export const otherProjects = [
   {
     title: "程式規劃工具",
     tech: ["React", "XYFlow", "Zustand", "IndexedDB"],
-    description: "視覺化流程圖編輯器，含本地持久化。",
+    description: "視覺化流程圖編輯器，用於 AI 開發前的架構規劃，含本地持久化。",
   },
 ];
 
@@ -122,9 +170,9 @@ export const timeline = [
     role: "不動產業務",
     description: "台灣不動產買賣仲介，3 年業務經驗。",
     details: [
-      "客戶開發與關係維護",
-      "市場資料收集、彙整與分析報告",
-      "跨部門溝通協調",
+      "客戶開發與長期關係維護",
+      "市場資料收集、彙整與分析報告（房價趨勢、競品分析）",
+      "跨部門溝通協調（產權、貸款、代書）",
     ],
   },
   {
@@ -134,11 +182,11 @@ export const timeline = [
     description:
       "管理 4,132 筆客戶，促成 92 件日本不動產成交。",
     details: [
-      "自行建立客戶數據分析體系（Excel 資料庫）",
-      "使用 LINE 官方帳號進行客戶管理與行銷",
+      "自行建立客戶數據分析體系（Excel 資料庫），追蹤客戶生命週期與轉換率",
+      "使用 LINE 官方帳號進行客戶分群管理與行銷推播",
       "使用 Canva 製作行銷素材與視覺內容",
-      "每年舉辦 100+ 場說明會",
-      "專案規劃、執行與跨部門協調",
+      "每年舉辦 100+ 場說明會，包含主持、簡報、現場 Q&A",
+      "跨部門協調：台灣業務、日本事務所、法務、財務",
     ],
     highlights: [
       "4,132 筆跨六都客戶資料",
@@ -149,11 +197,15 @@ export const timeline = [
   },
   {
     period: "2026/01 - 現在",
-    title: "自學開發",
+    title: "AI 應用開發與求職準備",
     role: "Vibe Coding with Claude Code",
     description:
-      "3 個月內獨立交付 3 個生產級 Web 應用，涵蓋棒球數據、不動產 AI、CRM 系統。",
-    details: [],
+      "3 個月內獨立交付 3 個生產級 Web 應用，涵蓋不動產 AI、CRM 系統、聯盟管理自動化。",
+    details: [
+      "利用 AI 工具從零建立完整 SaaS 產品",
+      "整合 OpenAI API、Gemini、LINE API 等 AI 服務至產品中",
+      "準備證券商高級業務員執照（金融科技方向）",
+    ],
     highlights: [
       "3 個生產級應用",
       "200+ REST API 端點",
@@ -171,17 +223,17 @@ export const languages = [
 export const skills = {
   myWork: [
     { label: "產品需求定義與功能規劃", desc: "決定做什麼功能、優先順序、使用者流程" },
-    { label: "商業邏輯規格描述", desc: "將棒球合約規則、不動產稅制、CRM 客戶分層等複雜邏輯，轉化為 AI 可實作的清晰規格" },
-    { label: "第三方服務申請與帳號管理", desc: "API 金鑰申請、OAuth 設定、Zeabur 環境變數配置" },
+    { label: "商業邏輯規格描述", desc: "將不動產稅制、CRM 客戶分層、聯盟合約規則等複雜邏輯，轉化為 AI 可實作的清晰規格" },
+    { label: "AI 功能設計與整合管理", desc: "定義 AI 功能的使用者流程、選擇合適的 AI 模型、申請 API 並管理金鑰與環境變數" },
+    { label: "第三方服務申請與串接", desc: "金流（NewebPay）、社群（LINE API）、資料（Apify）、AI（OpenAI / Gemini）" },
     { label: "視覺 QA 與問題回報", desc: "使用瀏覽器 DevTools、Console、截圖定位問題" },
-    { label: "基礎 Git 操作", desc: "push / pull / status / log / commit，理解 branch 與 merge" },
     { label: "數據分析與報表建立", desc: "自行設計客戶管理 Excel、統計轉換率與成交分析" },
   ],
   aiAssisted: [
-    { label: "技術方案選型", desc: "從 AI 建議中選擇方案（如 FastAPI vs Express）" },
-    { label: "資料庫結構", desc: "提供資料與規則，AI 設計 Schema；已有正規化、外鍵、索引的初步概念" },
-    { label: "API 串接", desc: "提出需要的功能，AI 建議適合的 API 並實作，我負責申請帳號與設定" },
-    { label: "部署流程", desc: "Zeabur 環境變數自己管理，Docker/CI/CD 設定由 AI 處理" },
+    { label: "技術方案選型", desc: "從 AI 建議中選擇方案（如 FastAPI vs Express、Prisma vs SQLAlchemy）" },
+    { label: "資料庫結構設計", desc: "提供業務規則與資料關係，AI 設計 Schema；理解正規化、外鍵、索引" },
+    { label: "API 實作與串接", desc: "定義需求規格，AI 負責實作，我負責驗證與整合測試" },
+    { label: "部署與 DevOps", desc: "環境變數自己管理，Docker / CI/CD 設定由 AI 處理" },
   ],
   devFlow: [
     "需求定義",
@@ -191,13 +243,12 @@ export const skills = {
     "迭代改進",
   ],
   techStack: [
-    { category: "後端框架", items: "FastAPI (Python)、Next.js API Routes" },
+    { category: "AI 工具", items: "Claude Code、OpenAI API (GPT-4)、Google Gemini、Apify、Playwright" },
+    { category: "後端", items: "FastAPI (Python)、Next.js API Routes、Flask" },
     { category: "資料庫", items: "PostgreSQL、SQLite、Prisma ORM、SQLAlchemy ORM" },
-    { category: "前端", items: "React、Next.js、TypeScript、Tailwind CSS" },
-    { category: "API 串接", items: "Yahoo Fantasy API、MLB Stats API、LINE API、OpenAI API、NewebPay、Google OAuth" },
-    { category: "部署", items: "Docker、Zeabur、GitHub" },
-    { category: "版本控制", items: "Git (push/pull/status/log/commit/branch)" },
-    { category: "AI 開發工具", items: "Claude Code (Vibe Coding)" },
+    { category: "前端", items: "React、Next.js、TypeScript、Tailwind CSS、Astro" },
+    { category: "API 整合", items: "LINE Messaging API、OpenAI API、NewebPay、Notion API、Google OAuth" },
+    { category: "部署", items: "Docker、Zeabur、GitHub Pages、Cloudflare R2" },
   ],
   nomadStats: {
     period: "2026 年 3 月（日本數位游牧）",
